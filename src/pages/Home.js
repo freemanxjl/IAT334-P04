@@ -31,6 +31,10 @@ const Content = styled(Container)`
     padding-top: 5rem;
 `;
 
+const ExtraMargin = styled.div`
+    margin-bottom: 3rem;
+`;
+
 function Home() {
     return (
         <div>
@@ -42,7 +46,7 @@ function Home() {
                     <Row>
                         <Col md="7">
                             <Content>
-                                <h1>Introducing Grubsy</h1>
+                                <h1 style={{marginBottom: '2rem'}}>Introducing Grubsy</h1>
                                 <h2>A mobile contactless dine-in ordering app</h2>
                                 <p style={{marginTop: '1rem'}}>Grubsy addresses the problem of helping customers enjoy food safely at local restaurants while dining in during COVID-19</p>
                                 <AnchorLink style={{marginTop: '3rem'}} md href="https://www.figma.com/proto/8mYNBSHpoHhxxJNgsiHhAY/IAT-334-P4-Prototype?node-id=104%3A343&scaling=scale-down&page-id=0%3A1&starting-point-node-id=104%3A2" target="_blank" rel="noreferrer noopener">Check our prototype</AnchorLink>
@@ -50,7 +54,7 @@ function Home() {
                         </Col>
                         <Col xs lg="3">
                             <Container>
-                                <Image style={{margin: "1rem 0 2rem 8rem"}} src={`${process.env.PUBLIC_URL}/iphone-prototype.png`}/>
+                                <Image style={{margin: "1rem 0 2rem 8rem", filter: "drop-shadow(0.2rem 0 0.2rem black)"}} src={`${process.env.PUBLIC_URL}/iphone-prototype.png`}/>
                             </Container>
                         </Col>
                     </Row>
@@ -58,15 +62,18 @@ function Home() {
             </GradientBackgroundOne>
             <MarginContainer>
                 <Row>
-                    <Col xs lg="5">
-                        <Image style={{margin: "2rem 8rem 2rem 0"}} src={`${process.env.PUBLIC_URL}/iphone-prototype.png`}/>
-                    </Col>
-                    <Col lg="7">
+                    <Col lg="6">
                         <Content>
                             <h3>Why is this a problem?</h3>
+                            <ExtraMargin/>
                             <p>Customers want to see restaurants following safety guidelines and often scan rooms to ensure their environment is safe to dine in. With new risks, customers feel weary and cautious about the objects they touch and all things on tables must be thoroughly sanitized</p>
+                            <ExtraMargin/>
                             <p>COVID-19 is a communicable disease that is defined as "an illness caused by an infectious agent or its toxic product that can be transmitted in a workplace from person to person". Thus, a clean environment must always be maintained for a safe dining experience.</p>
                         </Content>
+                    </Col>
+                    <Col xs md="6">
+                        <Image fluid rounded style={{margin: "4rem 0 4rem 4rem", filter: "drop-shadow(0.1rem 0 0.1rem grey)"}} src={`${process.env.PUBLIC_URL}/covid-actions.png`}/>
+                        <Image fluid rounded style={{margin: "0 0 2rem 4rem", filter: "drop-shadow(0.1rem 0 0.1rem grey)"}} src={`${process.env.PUBLIC_URL}/covid-characteristics.png`}/>
                     </Col>
                 </Row>
             </MarginContainer>
@@ -76,27 +83,29 @@ function Home() {
                         <Col lg="7">
                             <Content>
                                 <h3>How Grubsy works</h3>
+                                <ExtraMargin/>
                                 <ul>
                                     <li>Easily find the restaurant you want by searching or through suggestion based on your location</li>
                                     <li>Order online while dining inside the restaurant without the need to interact with any person or physical menu</li>
-                                    <li>Safely pay through the app without having to pull out any card or cash</li>
+                                    <li>Directly pay through the app without having to pull out any card or cash</li>
                                     <li>Keep track of all the restaurants you’ve been to for a ease of mind without worry</li>
                                 </ul>
                             </Content>
                         </Col>
                         <Col xs lg="5">
-                            <Image style={{margin: "2rem 0 2rem 8rem"}} src={`${process.env.PUBLIC_URL}/iphone-prototype.png`}/>
+                            <Image fluid rounded style={{margin: "2rem 0 2rem 8rem", boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)"}} src={`${process.env.PUBLIC_URL}/prototype.gif`}/>
                         </Col>
                     </Row>
                 </MarginContainer>
                 <MarginContainer>
                     <Row>
                         <Col xs lg="5">
-                            <Image style={{margin: "2rem 8rem 2rem 0"}} src={`${process.env.PUBLIC_URL}/iphone-prototype.png`}/>
+                            <Image fluid style={{margin: "4rem 0 2rem -1rem", filter: "drop-shadow(0 0 0.2rem black)"}} src={`${process.env.PUBLIC_URL}/iphone-prototype-2.png`}/>
                         </Col>
                         <Col lg="7">
-                            <Content>
+                            <Content style={{marginLeft: '8rem'}}>
                                 <h3>How Grubsy is an effective solution</h3>
+                                <ExtraMargin/>
                                 <ul>
                                     <li>Grubsy reduces the amount of physical interactions required while dining in at a restaurant</li>
                                     <li>Without the need to interact with others and physical menus, customers can feel less anxious about their surroundings and enjoy their meal with confidence</li>
@@ -110,6 +119,8 @@ function Home() {
             </GradientBackgroundTwo>
             <MarginContainer style={{marginBottom: '8rem'}}>
                 <h4>Citations</h4>
+                <Bib name="Karvounis, Nick." title="Photo by Nick Karvounis on Unsplash." site="Unsplash" date="14 Mar. 2019," link="unsplash.com/photos/Ciqxn7FE4vE"/>
+                <Bib name="Ministry of Health, BC," title="Pandemic Preparedness." site="Province of British Columbia" date="14 May 2020" link="www2.gov.bc.ca/gov/content/health/about-bc-s-health-care-system/office-of-the-provincial-health-officer/current-health-topics/pandemic-influenza."/>
                 <Bib title="Tempura Bowl from Tendon Kohaku" site="Daily Hive" link="images.dailyhive.com/20210326145358/IMG_4653.jpg"/>
                 <Bib title="Mastercard Logo" site="Mastercard" link="brand.mastercard.com/brandcenter/mastercard-brand-mark.html"/>
                 <Bib title="Menu with a QR Code." site="NBC Montana" link="nbcmontana.com/resources/media/ebbe75df-87f7-4b79-ad85-67f9f7697eda-large1x1_511G8785_01.jpg?1589934975594"/>
