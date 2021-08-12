@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// Variables
+$iconicgrey: #2a2829;
+$purewhite: #ffffff;
+$pureblack: #000000;
+$codewhite: #eee;
+$linkblue: #04aee7;;
+$greybrown: #a5a39d;
+$staticturqoise: #40e0d0;
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: 900;
+  max-width: 40rem;
+}
+
+h1{ font-size: 3.3rem; }
+h2{ font-size: 2.5rem; }
+h3{ font-size: 2rem; }
+h4{ font-size: 1.5rem; }
+h5{ font-size: 1.3rem; }
+h6{ font-size: 1rem; }
+
+code{
+  background-color: $codewhite;
+  padding: 0.5rem;
+  display: block;
+}
+
+p{
+  line-height: 1.8rem;
+}
+
+a, .link{
+  font-size: 1.5rem;
+  color: $linkblue;
+  text-decoration: underline;
+  transition: none;
+}
+
+::placeholder{
+  color: $greybrown;
+}
+
+/* Classes Styling */
+.element{
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: $purewhite;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+#interactive-elements, #combined-elements{
+  margin-top: 5rem;
+}
+
+li{
+  line-height: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer{
+  margin-top: 5rem;
+  padding-bottom: 2.5rem;
+}
+
+.navbar{
+  background: #004833;
+}
+
+/* For all items in navbar */
+.nav-props{
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  font-style: normal;
+  letter-spacing: 0em;
+  display: block;
+  outline: none;
+}
+
+.nav-props:hover{
+  text-decoration: none;
+}
+
+/* For the site title specifically */
+.site-title{
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: $purewhite;
+}
+
+.site-title:hover{
+  color: $purewhite;
+}
+
+/* For the nav buttons like 'Home' and 'About' */
+.nav-link-button{
+  color: $purewhite;
+  padding: .2rem 0;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+/* Underline property for the selected nav item and page */
+.underline{
+  background-repeat: repeat-x;
+  background-image: linear-gradient(to right,$purewhite 100%,$purewhite 0);
+  background-size: 1px 1px;
+  background-position: 0 calc(100%);
+}
+
+.btn{
+  font-weight: 300;
+}
+
+/* Removes outline from buttons when clicked */
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Removes outline from hamburger button */
+.navbar-toggler {
+  outline: none;
+  border: none;
+}
+
+/* For footer purposes, we wrap everything in a container + flexbox */
+#container {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 10rem;
+  flex-direction: column;
+}
+
+#main-content {
+  flex: 1;
+}
+
