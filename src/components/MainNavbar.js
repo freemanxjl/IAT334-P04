@@ -8,7 +8,7 @@ function MainNavbar(props) {
       <div>
         <Navbar fixed="top">
           <Navbar.Brand>
-            <Link className="site-title nav-props" to="/">
+            <Link style={{marginLeft: '1rem'}} className="site-title nav-props" to="/">
               Grubsy
             </Link>
           </Navbar.Brand>

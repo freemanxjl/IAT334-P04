@@ -1,7 +1,6 @@
 import { Suspense } from 'react';
 import { Helmet } from 'react-helmet';
 import { HashRouter as Router } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
 
 import Routes from './special/Routes';
 import MainNavbar from './components/MainNavbar';
