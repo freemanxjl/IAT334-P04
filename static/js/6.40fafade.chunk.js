@@ -1,0 +1,2 @@
+(this["webpackJsonpiat339-p03"]=this["webpackJsonpiat339-p03"]||[]).push([[6],{55:function(t,e,i){"use strict";i.r(e);i(0);var n=i(18),c=i(3);e.default=function(){return Object(c.jsxs)("div",{children:[Object(c.jsx)(n.a,{children:Object(c.jsx)("title",{children:"Not Found | Freeman Liu"})}),Object(c.jsx)("h1",{children:"Not Found"})]})}}}]);
+//# sourceMappingURL=6.40fafade.chunk.js.map
